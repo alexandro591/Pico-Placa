@@ -18,4 +18,5 @@ The return of this method is a boolean, on which a true means that you CAN be on
 - The valid Ecuador plate can either be in the new format or the old format.
     **Example:** _"UKY0652"="UKY652"_
 
-The program can achive a 
+## Automated testing software
+The repository contains an automated testing software for placaEcuador written in python, that creates a random day and time, and a random rule, and tests it a number n of times.
