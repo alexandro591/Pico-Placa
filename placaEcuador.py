@@ -1,6 +1,6 @@
 import datetime
 
-class Placa:
+class PlacaEcuador:
     #exceptions
     initException = ValueError("No se ingresó una placa válida")
     dateException = ValueError("No se ingresó una fecha válida, el formato es dd-mm-AA")
@@ -17,7 +17,7 @@ class Placa:
             self.placaString=placaCode[:3].upper()
             self.placaInt=placaCode[3:]
         else:
-            raise Placa.initException
+            raise PlacaEcuador.initException
     
     #method to check range in date
     @staticmethod
@@ -28,7 +28,7 @@ class Placa:
             return start <= x or x <= end
 
     #can be on the road? (true or false)
-    def canBeOnTheRoad(self,date,time,law):
+    def canBeOnTheRoad(self,date,time,*law):
         #date validation
         if date[0:2].isdigit() and date[3:5].isdigit() and date[6:10].isdigit() and len(date)==10:
             dd=int(date[0:2])
@@ -36,14 +36,14 @@ class Placa:
             yy=int(date[6:10])
             day=datetime.datetime(yy, mm, dd, 0, 0, 0, 0)
         else:
-            raise Placa.dateException
+            raise PlacaEcuador.dateException
 
         #time validation
         if time[0:2].isdigit() and time[3:5].isdigit() and len(time)==5:
             hours=int(time[0:2])
             minutes=int(time[3:5])
         else:
-            raise Placa.timeException
+            raise PlacaEcuador.timeException
 
         #ranges old and new
         horarioAntiguoMananaInicio = datetime.time(7, 0, 0)
@@ -54,23 +54,28 @@ class Placa:
         horarioNuevoFin = datetime.time(20, 0, 0)
     
         #check if in range
-        isTimeInRageAntiguoManana=Placa.time_in_range(horarioAntiguoMananaInicio,
+        isTimeInRageAntiguoManana=PlacaEcuador.time_in_range(horarioAntiguoMananaInicio,
             horarioAntiguoMananaFin,
             datetime.time(hours,minutes, 0))
-        isTimeInRageAntiguoTarde=Placa.time_in_range(horarioAntiguoTardeInicio,
+        isTimeInRageAntiguoTarde=PlacaEcuador.time_in_range(horarioAntiguoTardeInicio,
             horarioAntiguoTardeFin,
             datetime.time(hours, minutes, 0))
-        isTimeInRageNuevo=Placa.time_in_range(horarioNuevoInicio,
+        isTimeInRageNuevo=PlacaEcuador.time_in_range(horarioNuevoInicio,
             horarioNuevoFin, datetime.time(hours,
             minutes, 0))
 
         #check law (antigua or nueva)
-        if law=="antigua":
+        if not law:
+            law="ANTIGUA"
+        else:
+            law=law[0]
+            law=law.upper()
+        if law=="ANTIGUA":
             isTimeInRange=isTimeInRageAntiguoManana+isTimeInRageAntiguoTarde
-        elif law=="nueva":
+        elif law=="NUEVA":
             isTimeInRange=isTimeInRageNuevo
         else:
-            raise Placa.lawException
+            raise PlacaEcuador.lawException
 
         #final - check if can be on the road
         if isTimeInRange:
