@@ -5,7 +5,7 @@ from placaEcuador import *
 
 n=0
 nmax=100 #change this value to increment the number of tests
-rules=["antigua","nueva"]
+rules=["antigua","nueva"] #if you want just one rule, eliminate one them
 
 while(n<=nmax):
 
@@ -53,6 +53,7 @@ while(n<=nmax):
         print("date = " + date)
         print("time = " + time)
 
+        #test
         if myPlaca.canBeOnTheRoad(date,time,rule):
             print("El vehículo SÍ puede conducir en el rango de fecha y hora indicado, usando las leyes de tránsito " + rule.lower() + "s\n")
         else:
