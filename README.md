@@ -13,5 +13,7 @@ The return of this method is a boolean, on which a true means that you CAN be on
     **Example:** _"14:55"_
 - The rule and the valid Ecuador plate are NOT case sensitive.
     **Example:** _"nueva"="Nueva", "UKY0652"="uky0652"_
+- The valid Ecuador plate can be in the old format or the new format.
+    **Example:** _"UKY0652"="UKY652"_
 
 The program can achive a 
