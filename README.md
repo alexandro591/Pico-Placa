@@ -8,10 +8,10 @@ The return of this method is a boolean, on which a true means that you CAN be on
 
 ## Considerations
 - The date is a string in the format dd-mm-YY
-### Example "28-02-2016". 
+    Example "28-02-2016". 
 - The time is a string in format of 24h
-### Example: "14:55".
+    Example: "14:55".
 - The rule and the valid Ecuador plate are NOT case sensitive.
-### Example: "nueva"="Nueva", "UKY0652"="uky0652"
+    Example: "nueva"="Nueva", "UKY0652"="uky0652"
 
 The program can achive a 
