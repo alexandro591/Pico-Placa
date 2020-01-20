@@ -19,4 +19,4 @@ The return of this method is a boolean, on which a true means that you CAN be on
     **Example:** _"UKY0652"="UKY652"_
 
 ## Automated testing software
-The repository contains an automated testing software for placaEcuador written in python, that creates a random day and time, and a random rule, and tests it a number n of times.
+The repository contains an automated testing software for placaEcuador written in python, that creates a random day and time, and a random rule, and tests it an n number of times.
