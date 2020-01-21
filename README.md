@@ -40,6 +40,7 @@ The result is true, it uses the default old law.
     **Example:** _"UKY0652"="UKY652"_
 - The time is inclusive, either if you use the new or old law.
     **Example:** _a car at 19:30 with the old law, in the case that the plate falls inside the date of "pico y placa", can't be on the road, also at 16:00, 9:30 and 7:00_
+- The program throws a ValueError when the plate, the date, the time or the rule are not valid.
 
 ## Automated testing software
 The repository contains an automated testing software for placaEcuador written in python, that creates a random day and time, and a random rule, and tests it an n number of times.
