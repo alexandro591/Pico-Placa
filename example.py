@@ -6,7 +6,7 @@ rule="nueva" #change "antigua" to "nueva" to use the new rules for pico y placa
 
 myPlaca=PlacaEcuador("GKZ0607") #a valid plate
 date="23-01-2020" #format dd-mm-YY
-time="20:00" #24h format
+time="13:00" #24h format
 
 #example using a rule
 if myPlaca.canBeOnTheRoad(date,time,rule):
