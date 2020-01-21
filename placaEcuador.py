@@ -61,8 +61,8 @@ class PlacaEcuador:
             horarioAntiguoTardeFin,
             datetime.time(hours, minutes, 0))
         isTimeInRageNuevo=PlacaEcuador.time_in_range(horarioNuevoInicio,
-            horarioNuevoFin, datetime.time(hours,
-            minutes, 0))
+            horarioNuevoFin,
+            datetime.time(hours,minutes, 0))
 
         #check law (antigua or nueva)
         if not law:
