@@ -28,17 +28,17 @@ print(myPlaca.canBeOnTheRoad("23-01-2020","13:00"))
 The result is true, it uses the default old law.
 
 ## Considerations
-- The plate is a string that has to be an Ecuador valid plate which contains only numbers and letters.
+- The plate is a string that has to be an Ecuador valid plate which contains only numbers and letters.<br/>
     **Example:** _"ABC0123"_
-- The date is a string in the format dd-mm-YY.
+- The date is a string in the format dd-mm-YY.<br/>
     **Example:** _"28-02-2016"_
-- The time is a string in format of 24h.
+- The time is a string in format of 24h.<br/>
     **Example:** _"14:55"_
-- The rule and the valid Ecuador plate are NOT case sensitive.
+- The rule and the valid Ecuador plate are NOT case sensitive.<br/>
     **Example:** _"nueva"="Nueva", "UKY0652"="uky0652"_
-- The valid Ecuador plate can either be in the new format or the old format.
+- The valid Ecuador plate can either be in the new format or the old format.<br/>
     **Example:** _"UKY0652"="UKY652"_
-- The time is inclusive, either if you use the new or old law.
+- The time is inclusive, either if you use the new or old law.<br/>
     **Example:** _a car at 19:30 with the old law, in the case that the plate falls inside the date of "pico y placa", can't be on the road, also at 16:00, 9:30 and 7:00_
 - The program throws a ValueError when the plate, the date, the time or the rule are not valid.
 
