@@ -18,7 +18,7 @@ The return of this method is a boolean, on which a true means that you CAN be on
 - The valid Ecuador plate can either be in the new format or the old format.
     **Example:** _"UKY0652"="UKY652"_
 - The time is inclusive, either if you use the new or old law.
-    **Example:** _a car at 19:30 with the old law, in the case that the plate falls inside the date of "pico y placa" can't be on the road, also at 16:00, 9:30 and 7:00_
+    **Example:** _a car at 19:30 with the old law, in the case that the plate falls inside the date of "pico y placa", can't be on the road, also at 16:00, 9:30 and 7:00_
 
 ## Automated testing software
 The repository contains an automated testing software for placaEcuador written in python, that creates a random day and time, and a random rule, and tests it an n number of times.
