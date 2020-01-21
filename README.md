@@ -7,22 +7,25 @@ You can find the example code inside the repository, but simply the program crea
 The return of this method is a boolean, on which a true means that you CAN be on the road with the given variables or you CAN'T be on the road if it's false.
 
 ```
+from placaEcuador import *
 myPlaca=PlacaEcuador("GKZ0607")
 myPlaca.canBeOnTheRoad("23-01-2020","13:00","nueva")
 ```
 The result is false, it uses the new law.
 
 ```
+from placaEcuador import *
 myPlaca=PlacaEcuador("GKZ0607")
 myPlaca.canBeOnTheRoad("23-01-2020","13:00","antigua")
 ```
-The result is false, it uses the old law.
+The result is true, it uses the old law.
 
 ```
+from placaEcuador import *
 myPlaca=PlacaEcuador("GKZ0607")
 myPlaca.canBeOnTheRoad("23-01-2020","13:00")
 ```
-The result is false, it uses the default old law.
+The result is true, it uses the default old law.
 
 ## Considerations
 - The plate is a string that has to be an Ecuador valid plate which contains only numbers and letters.
