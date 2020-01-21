@@ -43,7 +43,7 @@ The result is true, it uses the default old law.
 - The program throws a ValueError when the plate, the date, the time or the rule are not valid.
 
 ## Automated testing software
-The repository contains an automated testing software for placaEcuador written in python, that creates a random day and time, and a random rule, and tests it an n number of times.
+The repository contains an automated testing software for placaEcuador written in python, that creates a random plate, date, time, and rule, and tests it an _nmax_ number of times.
 
 ## Instalation
 You can clone the repository and use the _placaEcuador.py_ file or you can just simply install it by typing:
