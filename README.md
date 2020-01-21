@@ -9,21 +9,21 @@ The return of this method is a boolean, on which a true means that you CAN be on
 ```
 from placaEcuador import *
 myPlaca=PlacaEcuador("GKZ0607")
-myPlaca.canBeOnTheRoad("23-01-2020","13:00","nueva")
+print(myPlaca.canBeOnTheRoad("23-01-2020","13:00","nueva"))
 ```
 The result is false, it uses the new law.
 
 ```
 from placaEcuador import *
 myPlaca=PlacaEcuador("GKZ0607")
-myPlaca.canBeOnTheRoad("23-01-2020","13:00","antigua")
+print(myPlaca.canBeOnTheRoad("23-01-2020","13:00","antigua"))
 ```
 The result is true, it uses the old law.
 
 ```
 from placaEcuador import *
 myPlaca=PlacaEcuador("GKZ0607")
-myPlaca.canBeOnTheRoad("23-01-2020","13:00")
+print(myPlaca.canBeOnTheRoad("23-01-2020","13:00"))
 ```
 The result is true, it uses the default old law.
 
