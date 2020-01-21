@@ -30,6 +30,6 @@ Run the _example.py_ file to test.
 
 ### Author
 A program created by Andrés Alexandro Tapia Flores
-[whatsapp: 0998775709](https://wa.me/593998775709)
-[email: alexandrotapiaflores@gmail.com](mailto:alexandrotapiaflores@gmail.com)
+[whatsapp: 0998775709](https://wa.me/593998775709)<br/>
+[email: alexandrotapiaflores@gmail.com](mailto:alexandrotapiaflores@gmail.com)<br/>
 [website](https://andrestapia.netlify.com)
