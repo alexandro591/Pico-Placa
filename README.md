@@ -20,3 +20,16 @@ The return of this method is a boolean, on which a true means that you CAN be on
 
 ## Automated testing software
 The repository contains an automated testing software for placaEcuador written in python, that creates a random day and time, and a random rule, and tests it an n number of times.
+
+## Instalation
+You can clone the repository and use the _placaEcuador.py_ file or you can just simply install it by typing:
+```
+python3 -m pip install placaEcuador
+```
+Run the _example.py_ file to test.
+
+### Author
+A program created by Andrés Alexandro Tapia Flores
+[whatsapp: 0998775709](https://wa.me/593998775709)
+[email: alexandrotapiaflores@gmail.com](mailto:alexandrotapiaflores@gmail.com)
+[website](https://andrestapia.netlify.com)
