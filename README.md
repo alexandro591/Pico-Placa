@@ -2,9 +2,27 @@
 A program build in Python 3 to check if your car can be on the road of Quito, using the the old and new laws of Ecuador for "pico y placa".
 
 ## Example of use
-You can find the example code inside the repository, but simply the program creates a PlacaEcuador object, which is an Ecuador valid plate in the format ABC0123 or ABC123 (not case sensitive), then it calls the methond of PlacaEcuador called canBeOnTheRoad, which consists of 3 inputs, the date, the time, and the rule "antigua" or "nueva" (optional, not case sensitive). If this rule is not instanced, the default rule is "antigua".
+You can find the example code inside the repository, but simply the program creates a PlacaEcuador object, which is an Ecuador valid plate in the format ABC0123 or ABC123 (not case sensitive), then it calls the method of PlacaEcuador called canBeOnTheRoad, which consists of 3 inputs, the date, the time, and the rule "antigua" or "nueva" (optional, not case sensitive). If this rule is not instanced, the default rule is "antigua".
 
 The return of this method is a boolean, on which a true means that you CAN be on the road with the given variables or you CAN'T be on the road if it's false.
+
+```
+myPlaca=PlacaEcuador("GKZ0607")
+myPlaca.canBeOnTheRoad("23-01-2020","13:00","nueva")
+```
+The result is false, it uses the new law.
+
+```
+myPlaca=PlacaEcuador("GKZ0607")
+myPlaca.canBeOnTheRoad("23-01-2020","13:00","antigua")
+```
+The result is false, it uses the old law.
+
+```
+myPlaca=PlacaEcuador("GKZ0607")
+myPlaca.canBeOnTheRoad("23-01-2020","13:00")
+```
+The result is false, it uses the default old law.
 
 ## Considerations
 - The plate is a string that has to be an Ecuador valid plate which contains only numbers and letters.
