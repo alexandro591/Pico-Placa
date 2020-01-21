@@ -71,7 +71,7 @@ class PlacaEcuador:
             law=law[0]
             law=law.upper()
         if law=="ANTIGUA":
-            isTimeInRange=isTimeInRageAntiguoManana+isTimeInRageAntiguoTarde
+            isTimeInRange=isTimeInRageAntiguoManana+isTimeInRageAntiguoTarde #boolean addition
         elif law=="NUEVA":
             isTimeInRange=isTimeInRageNuevo
         else:
