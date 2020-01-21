@@ -1,8 +1,8 @@
 from placaEcuador import *
 
 rule="nueva" #change "antigua" to "nueva" to use the new rules for pico y placa
-#antigua = Hours: 7:00am - 9:30am / 16:00pm - 19:30
-#nueva = Hours: 5:00am - 20:00pm
+#antigua = Hours: 7:00 - 9:30 / 16:00 - 19:30
+#nueva = Hours: 5:00 - 20:00
 
 myPlaca=PlacaEcuador("GKZ0607") #a valid plate
 date="23-01-2020" #format dd-mm-YY
