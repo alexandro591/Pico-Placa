@@ -81,8 +81,6 @@ class PlacaEcuador:
         if isTimeInRange:
             if day.weekday()==0 and (self.placaInt[-1]=="1" or self.placaInt[-1]=="2"):
                 return False
-            elif day.weekday()==0 and (self.placaInt[-1]=="1" or self.placaInt[-1]=="2"):
-                return False
             elif day.weekday()==1 and (self.placaInt[-1]=="3" or self.placaInt[-1]=="4"):
                 return False
             elif day.weekday()==2 and (self.placaInt[-1]=="5" or self.placaInt[-1]=="6"):
